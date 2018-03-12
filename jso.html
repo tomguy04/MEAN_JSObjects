@@ -49,37 +49,16 @@
                 ]
             };
 
+  
             for (key in users){
                 console.log(key);
-                for (let i in key){
-                    console.log(i);
-                    // let namelength = users.key[i].last_name.length+users.key[i].first_name.length;
-                    // console.log(i+1 + ' - ' + users.key[i].last_name + ', ' + users.key[i].first_name + ' - ' + namelength);
-                }
-
-                // for ( i = 0; i < users.employees.length; i++){
-                //     let namelength = users.employees[i].last_name.length+users.employees[i].first_name.length;
-                //     console.log(i+1 + ' - ' + users.employees[i].last_name + ', ' + users.employees[i].first_name + ' - ' + namelength);
-                // }
-              
-                // for ( j = 0; j < users.managers.length; j++){
-                //     let namelength2 = users.managers[j].last_name.length+users.managers[j].first_name.length;
-                //     console.log(j+1 + ' - ' + users.managers[j].last_name + ', ' + users.managers[j].first_name + ' - ' + namelength2);
-                // }
+                for ( i = 0; i < users[key].length; i++){ //key is  variable, not a value.
+                    let namelength = users[key][i].last_name.length+users[key][i].first_name.length;
+                    console.log(i+1 + ' - ' + users[key][i].last_name + ', ' + users[key][i].first_name + ' - ' + namelength);
+                    }
             }
-
+                 
             
-            // for (let key in users){
-            //     for ( i = 0; i < users.key.length; i++){
-            //         let namelength = users.key[i].last_name.length+users.key[i].first_name.length;
-            //         console.log(i+1 + ' - ' + users.key[i].last_name + ', ' + users.key[i].first_name + ' - ' + namelength);
-            //     }
-            // }   
-
-            // for ( j = 0; j < users.managers.length; j++){
-            //     let namelength2 = users.managers[j].last_name.length+users.managers[j].first_name.length;
-            //     console.log(j+1 + ' - ' + users.managers[j].last_name + ', ' + users.managers[j].first_name + ' - ' + namelength2);
-            // }
 
         </script>
     </body>
